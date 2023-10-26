@@ -81,6 +81,8 @@ VSim::VSim (const vluint64_t clkPeriodNs, const vluint64_t simTimeNs,
   mCpu->rst_ni = nResetBit;
 
   mCpu->jtag_trst_ni = nResetBit;
+  mCpu->execute_from_flash_i = 0;
+  mCpu->boot_select_i = 0;
 #elif defined(CV_MODEL_MCU)
   mCpu->rstn_i = nResetBit;
   mCpu->ref_clk_i = 1U;

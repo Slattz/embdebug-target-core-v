@@ -1108,8 +1108,8 @@ public:
 
     /// \brief The reset value of the \c sbcs register in the DMI.
     ///
-    /// Default version is 2 and access size is 32-bit
-    static const uint32_t RESET_VALUE = 0x20040000;
+    /// access size is 32-bit
+    static const uint32_t RESET_VALUE = 0x00040000;
 
     /// \brief Whether pretty printing is enabled for the \c sbcs
     /// register.
